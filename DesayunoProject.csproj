@@ -92,6 +92,7 @@
     <None Include="imagenes\metodo-de-pago.png" />
     <None Include="imagenes\metodo-de-pago color.png" />
     <None Include="imagenes\eliminar.png" />
+    <None Include="Resources\1129702.png" />
     <Content Include="Resources\registro.png" />
     <Content Include="Resources\registroblanco.png" />
     <None Include="imagenes\registroblanco.png" />

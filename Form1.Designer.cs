@@ -31,9 +31,12 @@ namespace DesayunoProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -45,10 +48,16 @@ namespace DesayunoProject
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -58,21 +67,13 @@ namespace DesayunoProject
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.button2);
@@ -96,6 +97,17 @@ namespace DesayunoProject
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de usuario";
             // 
+            // button7
+            // 
+            this.button7.Image = global::DesayunoProject.Properties.Resources.eliminar;
+            this.button7.Location = new System.Drawing.Point(221, 270);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(80, 48);
+            this.button7.TabIndex = 15;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
+            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -104,6 +116,17 @@ namespace DesayunoProject
             this.label16.Size = new System.Drawing.Size(43, 13);
             this.label16.TabIndex = 14;
             this.label16.Text = "Eliminar";
+            // 
+            // button2
+            // 
+            this.button2.Image = global::DesayunoProject.Properties.Resources.buscar1;
+            this.button2.Location = new System.Drawing.Point(86, 270);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 48);
+            this.button2.TabIndex = 13;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // label8
             // 
@@ -123,6 +146,18 @@ namespace DesayunoProject
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Buscar";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::DesayunoProject.Properties.Resources.registroblanco;
+            this.button1.Location = new System.Drawing.Point(116, 152);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 48);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // textBox4
             // 
@@ -209,6 +244,7 @@ namespace DesayunoProject
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.button8);
@@ -234,6 +270,34 @@ namespace DesayunoProject
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Producto";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(398, 67);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 13);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "Precio";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(398, 42);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(50, 13);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "Producto";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // button8
+            // 
+            this.button8.Image = global::DesayunoProject.Properties.Resources.eliminar;
+            this.button8.Location = new System.Drawing.Point(216, 121);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(80, 48);
+            this.button8.TabIndex = 17;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -243,6 +307,18 @@ namespace DesayunoProject
             this.label17.TabIndex = 16;
             this.label17.Text = "Eliminar";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.Image = global::DesayunoProject.Properties.Resources.metodo_de_pago;
+            this.button6.Location = new System.Drawing.Point(392, 121);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 48);
+            this.button6.TabIndex = 15;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -251,6 +327,15 @@ namespace DesayunoProject
             this.label15.Size = new System.Drawing.Size(46, 13);
             this.label15.TabIndex = 14;
             this.label15.Text = "Comprar";
+            // 
+            // button5
+            // 
+            this.button5.Image = global::DesayunoProject.Properties.Resources.flecha_hacia_atras;
+            this.button5.Location = new System.Drawing.Point(350, 85);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(47, 23);
+            this.button5.TabIndex = 25;
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -270,6 +355,18 @@ namespace DesayunoProject
             this.label14.Size = new System.Drawing.Size(152, 15);
             this.label14.TabIndex = 21;
             this.label14.Text = "Catalogo de Productos";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Image = global::DesayunoProject.Properties.Resources.registradoblanco;
+            this.button3.Location = new System.Drawing.Point(216, 67);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 48);
+            this.button3.TabIndex = 15;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // label13
             // 
@@ -340,6 +437,7 @@ namespace DesayunoProject
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox3.Location = new System.Drawing.Point(331, 206);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(558, 140);
@@ -347,110 +445,17 @@ namespace DesayunoProject
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Compra";
             // 
-            // button8
-            // 
-            this.button8.Image = global::DesayunoProject.Properties.Resources.eliminar;
-            this.button8.Location = new System.Drawing.Point(216, 121);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(80, 48);
-            this.button8.TabIndex = 17;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.Image = global::DesayunoProject.Properties.Resources.metodo_de_pago;
-            this.button6.Location = new System.Drawing.Point(392, 121);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 48);
-            this.button6.TabIndex = 15;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
-            // 
-            // button5
-            // 
-            this.button5.Image = global::DesayunoProject.Properties.Resources.flecha_hacia_atras;
-            this.button5.Location = new System.Drawing.Point(350, 85);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 23);
-            this.button5.TabIndex = 25;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Image = global::DesayunoProject.Properties.Resources.registradoblanco;
-            this.button3.Location = new System.Drawing.Point(216, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 48);
-            this.button3.TabIndex = 15;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
-            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
-            // 
-            // button7
-            // 
-            this.button7.Image = global::DesayunoProject.Properties.Resources.eliminar;
-            this.button7.Location = new System.Drawing.Point(221, 270);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(80, 48);
-            this.button7.TabIndex = 15;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
-            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
-            // 
-            // button2
-            // 
-            this.button2.Image = global::DesayunoProject.Properties.Resources.buscar1;
-            this.button2.Location = new System.Drawing.Point(86, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 48);
-            this.button2.TabIndex = 13;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::DesayunoProject.Properties.Resources.registroblanco;
-            this.button1.Location = new System.Drawing.Point(116, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 48);
-            this.button1.TabIndex = 12;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(398, 42);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 13);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Producto";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(398, 67);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 13);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "Precio";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DesayunoProject.Properties.Resources._1129702;
             this.ClientSize = new System.Drawing.Size(901, 358);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Sistema de Desayuno";
             this.groupBox1.ResumeLayout(false);
