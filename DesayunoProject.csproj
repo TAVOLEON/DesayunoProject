@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>desayuno.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +57,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -76,5 +83,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="desayuno.ico" />
+    <None Include="imagenes\flecha-hacia-atras.png" />
+    <None Include="imagenes\flecha-correcta.png" />
+    <None Include="imagenes\registradoblanco.png" />
+    <None Include="imagenes\registrado.png" />
+    <None Include="imagenes\metodo-de-pago.png" />
+    <None Include="imagenes\metodo-de-pago color.png" />
+    <None Include="imagenes\eliminar.png" />
+    <Content Include="Resources\registro.png" />
+    <Content Include="Resources\registroblanco.png" />
+    <None Include="imagenes\registroblanco.png" />
+    <None Include="imagenes\registro.png" />
+    <None Include="imagenes\buscar.png" />
+    <None Include="imagenes\buscarcolor.png" />
+    <Content Include="Resources\buscarcolor.png" />
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
