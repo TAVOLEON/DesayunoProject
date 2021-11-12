@@ -36,20 +36,23 @@ namespace DesayunoProject
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.UsRegistrar = new System.Windows.Forms.Button();
+            this.Ubuscar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.UsNumControl = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UsEdad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UsNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.Pinfoclave = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.BuscarProduct = new System.Windows.Forms.Button();
+            this.PinfoPrecio = new System.Windows.Forms.Label();
+            this.PinfoNom = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -59,16 +62,31 @@ namespace DesayunoProject
             this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Pclave = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Pprecio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Pnombre = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.mostrarCompras = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.fecha = new System.Windows.Forms.Label();
+            this.Cpprecio = new System.Windows.Forms.Label();
+            this.Cpnombre = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cucontrol = new System.Windows.Forms.Label();
+            this.Cuedad = new System.Windows.Forms.Label();
+            this.Cunombre = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -79,15 +97,15 @@ namespace DesayunoProject
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.UsRegistrar);
+            this.groupBox1.Controls.Add(this.Ubuscar);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.UsNumControl);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.UsEdad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.UsNombre);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -96,6 +114,7 @@ namespace DesayunoProject
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de usuario";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button7
             // 
@@ -105,6 +124,7 @@ namespace DesayunoProject
             this.button7.Size = new System.Drawing.Size(80, 48);
             this.button7.TabIndex = 15;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
             this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
             // 
@@ -125,6 +145,7 @@ namespace DesayunoProject
             this.button2.Size = new System.Drawing.Size(80, 48);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
@@ -147,24 +168,25 @@ namespace DesayunoProject
             this.label6.TabIndex = 10;
             this.label6.Text = "Buscar";
             // 
-            // button1
+            // UsRegistrar
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::DesayunoProject.Properties.Resources.registroblanco;
-            this.button1.Location = new System.Drawing.Point(116, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 48);
-            this.button1.TabIndex = 12;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            this.UsRegistrar.BackColor = System.Drawing.Color.Transparent;
+            this.UsRegistrar.Image = global::DesayunoProject.Properties.Resources.registroblanco;
+            this.UsRegistrar.Location = new System.Drawing.Point(116, 152);
+            this.UsRegistrar.Name = "UsRegistrar";
+            this.UsRegistrar.Size = new System.Drawing.Size(80, 48);
+            this.UsRegistrar.TabIndex = 12;
+            this.UsRegistrar.UseVisualStyleBackColor = false;
+            this.UsRegistrar.Click += new System.EventHandler(this.UsRegistrar_Click);
+            this.UsRegistrar.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.UsRegistrar.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // textBox4
+            // Ubuscar
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 244);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 20);
-            this.textBox4.TabIndex = 9;
+            this.Ubuscar.Location = new System.Drawing.Point(122, 244);
+            this.Ubuscar.Name = "Ubuscar";
+            this.Ubuscar.Size = new System.Drawing.Size(173, 20);
+            this.Ubuscar.TabIndex = 9;
             // 
             // label7
             // 
@@ -175,12 +197,12 @@ namespace DesayunoProject
             this.label7.TabIndex = 8;
             this.label7.Text = "Numero de Control :";
             // 
-            // textBox3
+            // UsNumControl
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 20);
-            this.textBox3.TabIndex = 6;
+            this.UsNumControl.Location = new System.Drawing.Point(122, 119);
+            this.UsNumControl.Name = "UsNumControl";
+            this.UsNumControl.Size = new System.Drawing.Size(173, 20);
+            this.UsNumControl.TabIndex = 6;
             // 
             // label4
             // 
@@ -191,12 +213,12 @@ namespace DesayunoProject
             this.label4.TabIndex = 5;
             this.label4.Text = "Numero de Control :";
             // 
-            // textBox2
+            // UsEdad
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 20);
-            this.textBox2.TabIndex = 4;
+            this.UsEdad.Location = new System.Drawing.Point(64, 79);
+            this.UsEdad.Name = "UsEdad";
+            this.UsEdad.Size = new System.Drawing.Size(231, 20);
+            this.UsEdad.TabIndex = 4;
             // 
             // label3
             // 
@@ -216,12 +238,12 @@ namespace DesayunoProject
             this.label5.TabIndex = 7;
             this.label5.Text = "Registrar";
             // 
-            // textBox1
+            // UsNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 2;
+            this.UsNombre.Location = new System.Drawing.Point(64, 43);
+            this.UsNombre.Name = "UsNombre";
+            this.UsNombre.Size = new System.Drawing.Size(231, 20);
+            this.UsNombre.TabIndex = 2;
             // 
             // label2
             // 
@@ -245,8 +267,11 @@ namespace DesayunoProject
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.Pinfoclave);
             this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.BuscarProduct);
+            this.groupBox2.Controls.Add(this.PinfoPrecio);
+            this.groupBox2.Controls.Add(this.PinfoNom);
             this.groupBox2.Controls.Add(this.button8);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.button6);
@@ -256,11 +281,11 @@ namespace DesayunoProject
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.Pclave);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.Pprecio);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.Pnombre);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(331, 13);
@@ -270,24 +295,54 @@ namespace DesayunoProject
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Producto";
             // 
-            // label19
+            // Pinfoclave
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(398, 67);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 13);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "Precio";
+            this.Pinfoclave.AutoSize = true;
+            this.Pinfoclave.Location = new System.Drawing.Point(465, 67);
+            this.Pinfoclave.Name = "Pinfoclave";
+            this.Pinfoclave.Size = new System.Drawing.Size(34, 13);
+            this.Pinfoclave.TabIndex = 29;
+            this.Pinfoclave.Text = "Clave";
+            this.Pinfoclave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(398, 42);
+            this.label18.Location = new System.Drawing.Point(16, 145);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 13);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Producto";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.label18.Size = new System.Drawing.Size(46, 13);
+            this.label18.TabIndex = 28;
+            this.label18.Text = "Buscar :";
+            // 
+            // BuscarProduct
+            // 
+            this.BuscarProduct.Image = global::DesayunoProject.Properties.Resources.buscar1;
+            this.BuscarProduct.Location = new System.Drawing.Point(69, 139);
+            this.BuscarProduct.Name = "BuscarProduct";
+            this.BuscarProduct.Size = new System.Drawing.Size(80, 24);
+            this.BuscarProduct.TabIndex = 16;
+            this.BuscarProduct.UseVisualStyleBackColor = true;
+            this.BuscarProduct.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // PinfoPrecio
+            // 
+            this.PinfoPrecio.AutoSize = true;
+            this.PinfoPrecio.Location = new System.Drawing.Point(398, 67);
+            this.PinfoPrecio.Name = "PinfoPrecio";
+            this.PinfoPrecio.Size = new System.Drawing.Size(37, 13);
+            this.PinfoPrecio.TabIndex = 27;
+            this.PinfoPrecio.Text = "Precio";
+            this.PinfoPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PinfoNom
+            // 
+            this.PinfoNom.AutoSize = true;
+            this.PinfoNom.Location = new System.Drawing.Point(398, 42);
+            this.PinfoNom.Name = "PinfoNom";
+            this.PinfoNom.Size = new System.Drawing.Size(50, 13);
+            this.PinfoNom.TabIndex = 26;
+            this.PinfoNom.Text = "Producto";
+            this.PinfoNom.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button8
             // 
@@ -297,6 +352,7 @@ namespace DesayunoProject
             this.button8.Size = new System.Drawing.Size(80, 48);
             this.button8.TabIndex = 17;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label17
             // 
@@ -316,6 +372,7 @@ namespace DesayunoProject
             this.button6.Size = new System.Drawing.Size(80, 48);
             this.button6.TabIndex = 15;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
             // 
@@ -336,6 +393,7 @@ namespace DesayunoProject
             this.button5.Size = new System.Drawing.Size(47, 23);
             this.button5.TabIndex = 25;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -345,6 +403,7 @@ namespace DesayunoProject
             this.button4.Size = new System.Drawing.Size(47, 23);
             this.button4.TabIndex = 24;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label14
             // 
@@ -365,6 +424,7 @@ namespace DesayunoProject
             this.button3.Size = new System.Drawing.Size(80, 48);
             this.button3.TabIndex = 15;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
@@ -377,12 +437,12 @@ namespace DesayunoProject
             this.label13.TabIndex = 14;
             this.label13.Text = "Registrar";
             // 
-            // textBox7
+            // Pclave
             // 
-            this.textBox7.Location = new System.Drawing.Point(65, 111);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(84, 20);
-            this.textBox7.TabIndex = 20;
+            this.Pclave.Location = new System.Drawing.Point(65, 111);
+            this.Pclave.Name = "Pclave";
+            this.Pclave.Size = new System.Drawing.Size(84, 20);
+            this.Pclave.TabIndex = 20;
             // 
             // label12
             // 
@@ -393,12 +453,12 @@ namespace DesayunoProject
             this.label12.TabIndex = 19;
             this.label12.Text = "Clave :";
             // 
-            // textBox5
+            // Pprecio
             // 
-            this.textBox5.Location = new System.Drawing.Point(65, 78);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(84, 20);
-            this.textBox5.TabIndex = 18;
+            this.Pprecio.Location = new System.Drawing.Point(65, 78);
+            this.Pprecio.Name = "Pprecio";
+            this.Pprecio.Size = new System.Drawing.Size(84, 20);
+            this.Pprecio.TabIndex = 18;
             // 
             // label10
             // 
@@ -409,12 +469,12 @@ namespace DesayunoProject
             this.label10.TabIndex = 17;
             this.label10.Text = "Precio :";
             // 
-            // textBox6
+            // Pnombre
             // 
-            this.textBox6.Location = new System.Drawing.Point(65, 42);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(231, 20);
-            this.textBox6.TabIndex = 16;
+            this.Pnombre.Location = new System.Drawing.Point(65, 42);
+            this.Pnombre.Name = "Pnombre";
+            this.Pnombre.Size = new System.Drawing.Size(231, 20);
+            this.Pnombre.TabIndex = 16;
             // 
             // label11
             // 
@@ -438,12 +498,154 @@ namespace DesayunoProject
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.groupBox3.Controls.Add(this.button10);
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.mostrarCompras);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.fecha);
+            this.groupBox3.Controls.Add(this.Cpprecio);
+            this.groupBox3.Controls.Add(this.Cpnombre);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.cucontrol);
+            this.groupBox3.Controls.Add(this.Cuedad);
+            this.groupBox3.Controls.Add(this.Cunombre);
+            this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Location = new System.Drawing.Point(331, 206);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(558, 140);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Compra";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // button10
+            // 
+            this.button10.Image = global::DesayunoProject.Properties.Resources.flecha_hacia_atras;
+            this.button10.Location = new System.Drawing.Point(180, 120);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(30, 20);
+            this.button10.TabIndex = 30;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Image = global::DesayunoProject.Properties.Resources.flecha_correcta;
+            this.button9.Location = new System.Drawing.Point(537, 120);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(21, 20);
+            this.button9.TabIndex = 30;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // mostrarCompras
+            // 
+            this.mostrarCompras.Enabled = false;
+            this.mostrarCompras.Location = new System.Drawing.Point(204, 120);
+            this.mostrarCompras.Name = "mostrarCompras";
+            this.mostrarCompras.Size = new System.Drawing.Size(334, 20);
+            this.mostrarCompras.TabIndex = 16;
+            this.mostrarCompras.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(450, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(88, 13);
+            this.label22.TabIndex = 16;
+            this.label22.Text = "Registrar Compra";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::DesayunoProject.Properties.Resources.registradoblanco;
+            this.button1.Location = new System.Drawing.Point(458, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 48);
+            this.button1.TabIndex = 30;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // fecha
+            // 
+            this.fecha.AutoSize = true;
+            this.fecha.Location = new System.Drawing.Point(348, 57);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(0, 13);
+            this.fecha.TabIndex = 16;
+            // 
+            // Cpprecio
+            // 
+            this.Cpprecio.AutoSize = true;
+            this.Cpprecio.Location = new System.Drawing.Point(213, 76);
+            this.Cpprecio.Name = "Cpprecio";
+            this.Cpprecio.Size = new System.Drawing.Size(0, 13);
+            this.Cpprecio.TabIndex = 21;
+            // 
+            // Cpnombre
+            // 
+            this.Cpnombre.AutoSize = true;
+            this.Cpnombre.Location = new System.Drawing.Point(213, 50);
+            this.Cpnombre.Name = "Cpnombre";
+            this.Cpnombre.Size = new System.Drawing.Size(0, 13);
+            this.Cpnombre.TabIndex = 16;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(347, 18);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(50, 15);
+            this.label21.TabIndex = 20;
+            this.label21.Text = "Fecha ";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(167, 18);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(129, 15);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "Producto Adquirido";
+            // 
+            // cucontrol
+            // 
+            this.cucontrol.AutoSize = true;
+            this.cucontrol.Location = new System.Drawing.Point(41, 111);
+            this.cucontrol.Name = "cucontrol";
+            this.cucontrol.Size = new System.Drawing.Size(0, 13);
+            this.cucontrol.TabIndex = 18;
+            // 
+            // Cuedad
+            // 
+            this.Cuedad.AutoSize = true;
+            this.Cuedad.Location = new System.Drawing.Point(41, 76);
+            this.Cuedad.Name = "Cuedad";
+            this.Cuedad.Size = new System.Drawing.Size(0, 13);
+            this.Cuedad.TabIndex = 17;
+            // 
+            // Cunombre
+            // 
+            this.Cunombre.AutoSize = true;
+            this.Cunombre.Location = new System.Drawing.Point(41, 50);
+            this.Cunombre.Name = "Cunombre";
+            this.Cunombre.Size = new System.Drawing.Size(0, 13);
+            this.Cunombre.TabIndex = 16;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(9, 18);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(122, 15);
+            this.label19.TabIndex = 16;
+            this.label19.Text = " Datos de Usuario";
             // 
             // Form1
             // 
@@ -462,6 +664,8 @@ namespace DesayunoProject
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -474,24 +678,24 @@ namespace DesayunoProject
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button UsRegistrar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Ubuscar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox UsNumControl;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UsEdad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UsNombre;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Pclave;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Pprecio;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Pnombre;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label14;
@@ -503,8 +707,25 @@ namespace DesayunoProject
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label PinfoNom;
+        private System.Windows.Forms.Label PinfoPrecio;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button BuscarProduct;
+        private System.Windows.Forms.Label cucontrol;
+        private System.Windows.Forms.Label Cuedad;
+        private System.Windows.Forms.Label Cunombre;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label Cpprecio;
+        private System.Windows.Forms.Label Cpnombre;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label fecha;
+        private System.Windows.Forms.Label Pinfoclave;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox mostrarCompras;
     }
 }
 
